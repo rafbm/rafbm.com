@@ -1,4 +1,4 @@
-class SourceResult
+class Rafbm
   def self.call(env)
     [200, {'Content-Type' => 'text/html'}, File.open('index.html', File::RDONLY)]
   end
@@ -12,4 +12,4 @@ class SourceResult
 end
 
 use Rack::Deflater
-run SourceResult
+run Rafbm
