@@ -11,5 +11,4 @@ class Rafbm
   end
 end
 
-use Rack::Deflater
 run Rafbm
