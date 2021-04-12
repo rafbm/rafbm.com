@@ -1,5 +1,4 @@
-source 'http://rubygems.org'
-
-ruby '2.5.1'
+source 'https://rubygems.org'
+ruby File.read('.ruby-version')
 
 gem 'puma'
