@@ -5,16 +5,22 @@
   <meta name="viewport" content="width=device-width">
   <title>Rafael Masson</title>
   <style>
-    html, body { height: 100%; width: 100% }
-    html { display: table }
+    html {
+      display: grid;
+      place-content: center;
+      height: 100%;
+    }
     body {
-      display: table-cell;
-      vertical-align: middle;
       text-align: center;
       font: 16px Monaco, monospace;
       padding: 40px;
     }
     span { white-space: nowrap }
+
+    @media (max-width: 320px) {
+      body { padding: 20px }
+      span { white-space: revert }
+    }
   </style>
 </head>
 <body>
